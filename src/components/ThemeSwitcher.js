@@ -18,9 +18,9 @@ const ThemeSwitcher = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
-  return (
+    return (
     <button className="button-mode" onClick={toggleTheme}>
-      Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+      {theme === 'light' ? 'D' : 'L'} 
     </button>
   );
 };
