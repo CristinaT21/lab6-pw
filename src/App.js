@@ -5,7 +5,6 @@ import './App.css';
 import CursorEffect from './components/CursorEffect';
 import BoxComponent from './components/BoxComponent';
 import Header from './components/Header';
-import AddFav from './components/ColorApp';
 
 function App() {
   return (

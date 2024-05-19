@@ -2,9 +2,17 @@ import React, { useState, useEffect } from 'react';
 
 const ThemeSwitcher = () => {
   // Use useState to keep track of the current theme
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme ? savedTheme : 'light';
+    });
 
-  // Use useEffect to apply the theme class to the body element
+  useEffect(() => {
+    // Save the theme to localStorage
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  // // Use useEffect to apply the theme class to the body element
   useEffect(() => {
     if (theme === 'dark') {
       document.body.classList.add('dark-mode');

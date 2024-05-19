@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Chipiu from "./Chipiu";
 import Bucket from "./Bucket";
 import Palarie from "./Palarie";
@@ -17,11 +17,20 @@ import SideBar from "./SideBar";
 
 const BoxComponent = () => {
     const [selectedColor, setSelectedColor] = useState('#000');
-    const [favorites, setFavorites] = useState([]);
-   
+
+    const [favorites, setFavorites] = useState(() => {
+        const savedFavorites = localStorage.getItem('favorites');
+        return savedFavorites ? JSON.parse(savedFavorites) : [];
+        });
+    
+    useEffect(() => {
+        // Save the favorites to localStorage
+        localStorage.setItem('favorites', JSON.stringify(favorites));
+    }, [favorites]);
+
     // Handle adding to favorites
     const handleAddToFavorites = () => {
-        const colorName = prompt('Enter a name for your favorite color:');
+        const colorName = prompt('Enter a name for your favorite color palette:');
         if(colorName) {
             setFavorites([...favorites, { name: colorName, color: selectedColor }]);
             console.log('Added to favorites!');
