@@ -45,29 +45,31 @@ main {
 .tree_geaca{
   filter: hue-rotate(250deg); 
 }
-.tree2{
-  filter: hue-rotate(150deg); 
-}
 .tree_maleta{
   filter: hue-rotate(-60deg); 
 }
 .tree_polo{
-  filter: hue-rotate(-10deg); 
+  filter: hue-rotate(250deg); 
 }
 .tree_chipiu{
   filter: hue-rotate(150deg); 
-
+}
+.tree_bucket{
+  filter: hue-rotate(150deg); 
+}
+.tree_palarie{
+  filter: hue-rotate(150deg); 
 }
 .tree_pantaloni{
-  filter: hue-rotate(250deg);
+  filter: hue-rotate(-150deg);
 }
 .tree_fusta{
-  filter: hue-rotate(250deg);
+  filter: hue-rotate(0deg);
   margin-top:-20px;
-  margin-left:-10px;
+  margin-left:-25px;
 }
 .tree_sorti{
-  filter: hue-rotate(250deg);
+  filter: hue-rotate(-150deg);
   margin-right: -8px;
 }
 .tree_pantofi{
@@ -79,6 +81,10 @@ main {
 .tree_botine{
     filter: hue-rotate(150deg);
 }
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
 .mdl-card__actions:after {
   content: '';
   display: table;
@@ -281,6 +287,10 @@ svg {
 .slapi_path{
   scale: 3; 
 }
+.fusta_path{
+  scale: 1.2; 
+
+}
 path{
   width:100%;
   height:auto;
@@ -439,8 +449,13 @@ button.active .text {
     position:relative;
     max-width: 195px; 
     margin: 0 auto; 
-    top: 100px;
+    top: 10px;
+
   }
+
+.save_btn{
+  margin-top: 10px;
+}
 
 .custom-btn {
   width: 195px;
@@ -609,3 +624,10 @@ button.active .text {
     opacity: 0;
   }
 }
+
+  .footer {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+  }

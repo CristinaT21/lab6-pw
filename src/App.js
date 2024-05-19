@@ -5,7 +5,7 @@ import './App.css';
 import CursorEffect from './components/CursorEffect';
 import BoxComponent from './components/BoxComponent';
 import Header from './components/Header';
-import AddFav from './components/AddFav';
+import AddFav from './components/ColorApp';
 
 function App() {
   return (
@@ -16,7 +16,13 @@ function App() {
 			<Header />
 			<main className="mdl-layout__content">
 				<BoxComponent /> 
-			</main>
+			  </main>
+			  <footer class="footer">
+				  <small>
+              © 2024 made with &#10084; by -
+              <a href="https://www.linkedin.com/in/cristina-%C8%9B%C4%83rn%C4%83-568735152/"> Cristina Țărnă </a>
+            </small>
+          </footer>
 		</div>
 	</div>
   );

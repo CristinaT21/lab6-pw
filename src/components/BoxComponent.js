@@ -12,13 +12,29 @@ import Botine from "./Botine";
 import Pantofi from "./Pantofi";
 import Slapi from "./Slapi";
 import SVGColorChanger from "./SVGColorChanger";
+import SideBar from "./SideBar";
+
 
 const BoxComponent = () => {
     const [selectedColor, setSelectedColor] = useState('#000');
+    const [favorites, setFavorites] = useState([]);
+   
+    // Handle adding to favorites
+    const handleAddToFavorites = () => {
+        const colorName = prompt('Enter a name for your favorite color:');
+        if(colorName) {
+            setFavorites([...favorites, { name: colorName, color: selectedColor }]);
+            console.log('Added to favorites!');
+        }
+    };
+    const handleColorChange = (color) => {
+        setSelectedColor(color);
+    };
 
     return (
         <>
             <div>
+                <SideBar favorites={favorites} onColorChange={handleColorChange} />
                 <div className="page-content mdl-grid">
 					<div className="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--3-col-tablet mdl-cell--middle">
 						<div className="watch">
@@ -47,6 +63,10 @@ const BoxComponent = () => {
                 </div>
                 <div className="color-changer-container">
                     <SVGColorChanger setSelectedColor={setSelectedColor} />
+                    <button className="save_btn custom-btn btn-8" onClick={handleAddToFavorites}>
+                        <span>Save</span> 
+                    </button>
+                
                 </div>
             </div>
         </>
