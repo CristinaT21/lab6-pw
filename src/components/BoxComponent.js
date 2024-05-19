@@ -30,11 +30,17 @@ const BoxComponent = () => {
     const handleColorChange = (color) => {
         setSelectedColor(color);
     };
+    // Function to handle item deletion from favorites
+    const handleRemoveFavorite = (indexToRemove) => {
+        // Filter out the item at the specific index
+        const newFavorites = favorites.filter((_, index) => index !== indexToRemove);
+        setFavorites(newFavorites);
+    };
 
     return (
         <>
             <div>
-                <SideBar favorites={favorites} onColorChange={handleColorChange} />
+                <SideBar favorites={favorites} onColorChange={handleColorChange} onRemoveFavorite={handleRemoveFavorite} />
                 <div className="page-content mdl-grid">
 					<div className="mdl-cell mdl-cell--6-col mdl-cell--4-col-phone mdl-cell--3-col-tablet mdl-cell--middle">
 						<div className="watch">

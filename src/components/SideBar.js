@@ -1,7 +1,7 @@
 import React from "react";
 import './SideBar.css';
 
-function SideBar({favorites, onColorChange}) {
+function SideBar({favorites, onColorChange, onRemoveFavorite}) {
     return (
         <>
             <input id="slide-sidebar" type="checkbox" role="button" />
@@ -13,8 +13,11 @@ function SideBar({favorites, onColorChange}) {
                 {/* add fav */}
                 <ul>
                     {favorites.map((fav, index) => (
-                        <li key={index} onClick={() => onColorChange(fav.color)} style={{ cursor: 'pointer' }}>
+                        <li key={index} onClick={() => onColorChange(fav.color)} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                             <span className="fav-name" >{fav.name}</span>
+                            <button className="x-btn" onClick={() => onRemoveFavorite(index)} style={{ cursor: 'pointer' }}>
+                            X
+                        </button>
                         </li>
                     ))}
                 </ul>
