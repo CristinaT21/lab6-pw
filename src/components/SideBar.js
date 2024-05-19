@@ -5,7 +5,7 @@ function SideBar({favorites, onColorChange, onRemoveFavorite}) {
     return (
         <>
             <input id="slide-sidebar" type="checkbox" role="button" />
-            <label class="close-menu noselect" for="slide-sidebar"><span>≡</span></label>
+            <label class="close-menu noselect" for="slide-sidebar"><span className="sidebar-btn">≡</span></label>
 
             <div class="controls">
             {/* <br/><br/> */}
