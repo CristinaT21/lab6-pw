@@ -172,11 +172,18 @@ input:checked + .close-menu {
 .favourite-title{
     color: #000;
 }
-.dark-mode .favourite-title{
+.dark-mode .favourite-title {
     
     color: #fff;
 }
 .x-btn{
     border: none;
     background-color: transparent;
+    color: #000;
+}
+.dark-mode .x-btn {
+    color: #fff;
+}
+.dark-mode .x-btn:hover{
+    color: #000;
 }
