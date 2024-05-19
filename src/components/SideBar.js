@@ -8,7 +8,6 @@ function SideBar({favorites, onColorChange, onRemoveFavorite}) {
             <label class="close-menu noselect" for="slide-sidebar"><span className="sidebar-btn">≡</span></label>
 
             <div class="controls">
-            {/* <br/><br/> */}
             <span className="favourite-title">Favorites</span>
                 {/* add fav */}
                 <ul>

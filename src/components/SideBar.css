@@ -6,8 +6,7 @@
 .controls{
   position:absolute;
   top:0;
-  /* left:0; */
-    left: -280px;
+  left: -280px;
   height:100%;
   margin:0;
   width: 280px;
@@ -20,28 +19,25 @@
 .controls ul{
   padding:0;
   margin:0;
-  
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: -0;
   overflow-y: auto;
-  margin-top: 0; /* Ensure no extra margin at the top */
+  margin-top: 0;
   top: 50px;
 }
 
 .controls li{
     margin-left: 20px;
   display:block;
-  white-space: nowrap;      /* Prevents the text from wrapping to the next line */
-  overflow: hidden;         /* Keeps the content from spilling out of the container */
+  white-space: nowrap;      
+  overflow: hidden;         
   text-overflow: ellipsis; 
-  /* border-bottom:1px solid #BDBDBD; */
 }
 .controls li:nth-child(1){
   display:block;
-  /* border-bottom:1px solid #212121; */
 }
 .controls li :hover{
   background-color: #E0E0E0;
@@ -58,7 +54,6 @@
 .controls ul {
   height:100%;
   background-color: transparent;
-  /* border-right:1px solid #212121; */
 }
 .controls input ~ label {
   padding:10px 8px;
@@ -84,9 +79,6 @@
   border:0;
   transition: all .25s ease;
 }
-/* .controls span , .controls a .dark-mode{
-  color:#5a5454;
-} */
 .controls span .dark-mode :hover{
   color:#000000;
 }
@@ -156,7 +148,6 @@ input:checked + .close-menu {
   letter-spacing: 1px;
   width:50px;
   text-align:center;
-  /* border:1px solid #212121; */
   color:#fff;
 }
 

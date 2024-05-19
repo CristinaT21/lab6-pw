@@ -81,7 +81,6 @@ const BoxComponent = () => {
                     <button className="save_btn custom-btn btn-8" onClick={handleAddToFavorites}>
                         <span>Save</span> 
                     </button>
-                
                 </div>
             </div>
         </>
