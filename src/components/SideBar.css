@@ -6,7 +6,8 @@
 .controls{
   position:absolute;
   top:0;
-  left:0;
+  /* left:0; */
+    left: -280px;
   height:100%;
   margin:0;
   width: 280px;
@@ -136,7 +137,8 @@ input[type=checkbox] {
 }
 
 input:checked ~ .controls { 
-    left: -280px;
+    /* left: -280px; */
+    left: 0;
 }
 
 input:checked + .close-menu { 
