@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lab6-pw/static/css/main.126626bc.css",
+    "main.js": "/lab6-pw/static/js/main.b84bd02e.js",
+    "index.html": "/lab6-pw/index.html",
+    "main.126626bc.css.map": "/lab6-pw/static/css/main.126626bc.css.map",
+    "main.b84bd02e.js.map": "/lab6-pw/static/js/main.b84bd02e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.126626bc.css",
+    "static/js/main.b84bd02e.js"
+  ]
+}
