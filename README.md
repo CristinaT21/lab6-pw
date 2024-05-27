@@ -1,3 +1,11 @@
+# Daily Inspiration
+a React application that lets the user generate a color palette for outfits and save the favourite ones.
+The application is available in light and dark mode.
+
+
+![](image.png)
+
+--------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
